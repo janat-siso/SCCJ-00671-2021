@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="BMI.css">
+  <title>Green Apple | BMI Calculator</title>
+    </head>
+    <script type="text/javascript">
+        function BMI() {
+            var h=document.getElementById('h').value;
+            var w=document.getElementById('w').value;
+            var bmi=w/(h/100*h/100);
+            var bmio=(bmi.toFixed(2));
+
+            document.getElementById("result").innerHTML="Your BMI is" + bmio;
+        }
+    </script>
+    <body>
+        <div>
+        <h2>BMI Calculator</h2>
+        <p class="text">Height</p>
+        <input type="text" id="h">
+        <p class="text">Weight</p>
+        <input type="text" id="w">
+        <p id="result"></p>
+        <button id="btn" onClick="BMI()">Calculate</button>
+        <p id="info">Please enter height [cm] and weight [kg]</p>
+        <p id="classifications">BMI Classifications</p>
+        <button id="button">UNDERWEIGHT = LESS THAN 18.5</button>
+        <button id="button">NORMAL = 18.5 - 24.9</button>
+        <button id="button">OVERWEIGHT = GREATER THAN 24.9 </button>
+        </div>
+    </body>
+</html>
