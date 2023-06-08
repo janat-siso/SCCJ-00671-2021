@@ -48,6 +48,160 @@
                         <button type="button" class="cancelbtn">Cancel</button>
                         <button type="submit" class="signupbtn">Sign Up</button>
                     </div>
+                    
+                    <style>
+                        * {box-sizing: border-box}
+                        *{
+                         font-family: 'Poppins', sans-serif;
+                         }
+                        body{
+                             background-image: linear-gradient(120deg,#ff6b6b, #5f27cd);
+                             background-size: cover;
+                             background-repeat: no-repeat;
+                             background-position: center;
+                             background-attachment: fixed;
+                        }
+                        /* Full-width input fields */
+                          input[type=text], input[type=password] {
+                          width: 87%;
+                          padding: 15px;
+                          margin: 5px 0 22px 0;
+                          display: flex;
+                          border: none;
+                          border-radius: 30px;
+                          background: rgba(255,255,255,0.1);
+                        }
+
+                        input[type=text]:focus, input[type=password]:focus {
+                          background-color: #ddd;
+                          outline: none;
+                        }
+
+                        .input-field{
+                            display: flex;
+                            flex-direction: column;
+                            margin-bottom: 10px;
+    
+                        }
+
+                        .input{
+                            height: 45px;
+                            width: 87%;
+                            border: none;
+                            outline: none;
+                            border-radius: 30px;
+                            color: aliceblue;
+                            padding: 0 0 0 42px;
+                            background: rgba(255,255,255,0.1);
+                        }
+
+                        hr {
+                          border: 1px solid #f1f1f1;
+                          margin-bottom: 25px;
+                        }
+
+                        .box{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            min-height: 90vh;
+                        }
+
+                        i{
+                            position: relative;
+                            top: -31px;
+                            left: 17px;
+                            color: #fff;
+                        }
+
+                        h1{
+                            color: black;
+                            font-size: x-large;
+                            display: flex;
+                            justify-content: center;
+                            padding: 10px 0 10px 0;
+                        }
+
+                        p{
+                            color: black;
+                            font-size: small;
+                            display: flex;
+                            justify-content: center;
+                            padding: 10px 0 10px 0;
+                        }
+                        /* Set a style for all buttons */
+                        button {
+                          background-color: #04AA6D;
+                          color: black;
+                          padding: 14px 20px;
+                          margin: 8px 0;
+                          border: none;
+                          border-radius: 30px;
+                          cursor: pointer;
+                          width: 100%;
+                          opacity: 0.9;
+
+                        }
+
+                        button:hover {
+                          opacity:1;
+                        }
+
+                        /* Extra styles for the cancel button */
+                        .cancelbtn {
+                          padding: 14px 20px;
+                          background-color: rgba(255,255,255,0.7);
+                        }
+
+                        /* Float cancel  buttons and add an equal width */
+                        .cancelbtn {
+                          float: left;
+                          width: 30%;
+                          font-weight: bold;
+                        }
+
+                        .cancel:hover{
+                            box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+                            color: black;
+                        }
+
+                        /* Extra styles for the sign up button */
+                        .signupbtn {
+                            padding: 14px 20px;
+                            background-color: rgba(255,255,255,0.7);
+                          }
+
+                          /* Float  signup buttons and add an equal width */
+                        .signupbtn {
+                            float: right;
+                            width: 30%;
+                            font-weight: bold;
+                          }
+
+                          .signup:hover{
+                            box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+                        }
+
+                        /* Add padding to container elements */
+                        .container {
+                          padding: 16px;
+                        }
+
+                        /* Clear floats */
+                        .clearfix::after {
+                          content: "";
+                          clear: both;
+                          display: table;
+                        }
+
+                        /* Change styles for cancel button and signup button on extra small screens */
+                        @media screen and (max-width: 300px) {
+                          .cancelbtn, .signupbtn {
+                            width: 100%;
+                          }
+}
+                    </style>
+                   
               </div>
             </div>
           </form>
